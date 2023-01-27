@@ -93,6 +93,19 @@ func sliceTest() {
 	fmt.Println(d[0:5])
 	fmt.Println(len(d))
 }
+func mapTest() {
+	c := make(map[string]string)
+	c["a"] = "i"
+	c["b"] = "am"
+	fmt.Println(c)
+	d, e := c["undefined"]
+	fmt.Println(d, e)
+	delete(c, "a")
+	m2 := map[string]int{"one": 1}
+	var m3 = map[string]int{"two": 2, "three": 3}
+	fmt.Println(m2, m3)
+	fmt.Println(d)
+}
 func main() {
 	//helloworld()
 	//vartest()
@@ -100,5 +113,6 @@ func main() {
 	//ifTest()
 	//switchTest()
 	//arrayTest()
-	sliceTest()
+	//sliceTest()
+	mapTest()
 }
