@@ -14,6 +14,5 @@ func helloGoroutine() {
 			hello(j)
 		}(i)
 	}
-
 	time.Sleep(time.Second)
 }

@@ -199,6 +199,7 @@ func query2(word string, re chan string) {
 func main() {
 	var s string
 	result := make(chan string)
+
 	for {
 		_, err := fmt.Scanf("%s", &s)
 		if err != nil {
