@@ -57,6 +57,7 @@ func (f *QueryInfoFlow) prepareInfo() error {
 		posts := repository.NewPostDaoInstance().QueryPostsByParentId(f.topicId)
 		f.posts = posts
 	}()
+	wg.Wait()
 	return nil
 
 }
